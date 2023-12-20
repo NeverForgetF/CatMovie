@@ -1,0 +1,76 @@
+@import url("public.css");
+.content{
+    width: 100%;
+    height: 375px;
+    /* rgb(115, 68, 81)  rgb(58, 47, 89) */
+    background: linear-gradient(rgb(115, 68, 81),rgb(58, 47, 89));
+    position: relative;
+}
+.content>.movieImg{
+    width: 15.5%;
+    height: 85%;
+    position: absolute;
+    top: 20%;
+    left: 12.1%;
+    border: 3px solid white;
+}
+.content>.movieImg img{
+    width: 100%;
+    height: 100%;
+}
+.content>.movieInfo{
+    position: absolute;
+    width: 16.3%;
+    height: 73.5%;
+    top: 20%;
+    left: 30%;
+    color: white;
+}
+.Info_text{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.Info_text span{
+    margin: 4px 0;
+}
+.content>.movieInfo>.purchase{
+    width: 260px;
+    height: 86px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content>.movieInfo>.purchase div>.look_val{
+    width:120px;
+    height: 36px;
+    background-color: #756189;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+}
+.content>.movieInfo>.purchase>.buy_ticket{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(223, 45, 45);
+    border-radius: 2px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.content>.movieCore{
+    position: absolute;
+    width: 8.2%;
+    height: 31.2%;
+    top: 61%;
+    left: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

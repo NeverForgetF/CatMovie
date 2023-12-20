@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none; /* 去除下划线 */
+    color: inherit; /* 使用父元素的文字颜色 */
+    cursor: inherit; /* 使用父元素的光标样式 */
+    /*pointer-events: none; !* 禁止链接的交互事件 *!*/
+}
+.myFlex_x{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.myFlex_y{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

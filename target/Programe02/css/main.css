@@ -1,0 +1,254 @@
+@import url("public.css");
+
+.header-placeholder {
+    height: 60px;
+}
+.content{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: flex-end;*/
+}
+.content>.content_main{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.content>.content_main>.hotPlaying{
+    left: 20px;
+    width: 65%;
+    height: 100%;
+    /*background-color: darkgreen;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content>.content_main>.hotPlaying>.hotPlaying_title{
+    width: 100%;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #ef4238;
+}
+.panel-arrow{
+    background: url("../img/right_jiao.png") top no-repeat;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+.content>.content_main>.hotPlaying>.hotPlaying_content{
+    margin-top: 23px;
+    width: 98%;
+    height: 80%;
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content>.content_main>.hotPlaying>.hotPlaying_content>.movie{
+    width: 160px;
+    height: 259px;
+    background-color: darkblue;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+.movie_img{
+    width: 100%;
+    height: 220px;
+    background-color: aqua;
+    position: relative;
+}
+.movieName{
+    position: absolute;
+    width: 100%;
+    bottom: 7px;
+    display: flex;
+    left: 10px;
+}
+.movie_img_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../img/gridbackground.png") repeat-x bottom;
+}
+.movieName_front{
+    font-size: 16px;
+    width: 70%;
+    color: white;
+    /*margin: 0 10px;*/
+    line-height: 22px;
+    overflow: hidden;   /*超出的部分隐藏*/
+    text-overflow: ellipsis;    /*文本省略。。。*/
+    white-space: nowrap;    /*文本不换行*/
+}
+.movieName_score{
+    color: #ffb400;
+}
+i{
+    margin-left: 5px;
+}
+.movie-ver{
+    position: absolute;
+    top: 4px;
+    left: -2px;
+    font-size: 12px;
+    color: #fff;
+}
+.movie-ver>.imax2d{
+    width: 69px;
+    height: 25px;
+}
+.content>.content_main>.hotPlaying>.hotPlaying_content>.movie>.movie_text{
+    width: 100%;
+    height: 39px;
+    background-color: white;
+    color: #ef4238;
+    text-align: center;
+    line-height: 39px;
+    /*border-bottom: 1px solid #d7d4d4;*/
+    /*border-left: 1px solid #d7d4d4;*/
+    /*border-right: 1px solid #d7d4d4;*/
+    cursor: pointer;
+    font-size:14px;
+}
+.content>.content_main>.hotPlaying>.hotPlaying_content>.movie>.movie_text:hover{
+    background-color: #ef4238;
+    color: white;
+}
+
+.content>.content_main>.todayTicket{
+    width: 30%;
+    height: 100%;
+    /*background-color: darkmagenta;*/
+}
+.content>.content_main>.todayTicket>.todayTicket_front{
+    width: 100%;
+    height: 360px;
+}
+.content>.content_main>.todayTicket>.todayTicket_front>.todayTicket_content{
+    width: 100%;
+    height: 311px;
+    margin-top: 15px;
+    /*background-color: #c10cd5;*/
+}
+li{
+    list-style: none;
+    margin-left: -40px;
+    display: flex;
+    /*margin-bottom: 0;*/
+    width: 353px;
+    height: 55px;
+}
+.first_li{
+    height: 80px;
+    /*width: 353px;*/
+    border: 1px solid #efefef;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.another_li{
+    cursor: pointer;
+}
+.ticket_movie_img{
+    height: 80px;
+    width: 120px;
+    position: relative;
+}
+.ticket_movie_text{
+    height: 100%;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    color: #333333;
+    font-size: 18px;
+}
+li:hover{
+    background-color: #f8f5f5;
+}
+.icon_king{
+    position: absolute;
+    top: 0;
+}
+.text_red_color{
+    color: #ef4238;
+    font-size: 14px;
+}
+.for_li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.li_in{
+    display: block;
+    width: 210px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;   /*超出的部分隐藏*/
+    text-overflow: ellipsis;    /*文本省略。。。*/
+    white-space: nowrap;    /*文本不换行*/
+}
+.ranking-index{
+    color: #ef4238;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.content>.content_main>.todayTicket>.todayTicket_after{
+    margin-top: 30px;
+    background-color: #fdfdfd;
+    border: 1px solid #efefef;
+    /*padding-right: 15px;*/
+    width: 100%;
+    height: 105px;
+}
+.todayTicket_after>h3{
+    color: #fff;
+    background-color: #ef4238;
+    height: 85px;
+    width: 20px;
+    float:left;
+    padding: 10px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.top_and_bottom{
+    height: 85px;
+    width: 82%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.top_and_bottom>.and_top{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top_and_bottom>.and_top>.top-front{
+    padding-top: 20px;
+}
+.top_and_bottom>.and_top>.top-hou{
+    padding-top: 31px;
+}
+.top_and_bottom>.and_bottom{
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+}
